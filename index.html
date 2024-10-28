@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOD OF ETERNAL WAR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio controls autoplay loop>
+        <source src="mp3/god of figth.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div id="game-info">
+        <p id="score">Score: 0</p>
+        <p id="timer">Time: 3</p>
+    </div>
+
+    <!-- Modal de la historia -->
+    <div id="story-modal" class="modal">
+        <div class="modal-content">
+            <h2>Historia</h2>
+            <p>Hace muchos años, un guerrero legendario conocido como Kael dominaba las tierras de Nerath. Su habilidad en la lucha era sin igual, y su nombre era temido y respetado por todos. Sin embargo, una oscura fuerza surgió de las sombras, desafiando a Kael en un duelo épico. La batalla fue feroz, y aunque Kael luchó con todo su ser, fue derrotado por el enigmático Sombra, un ser cuya ambición era sumergir al mundo en el caos. 
+                Con la caída de Kael, los clanes de guerreros se dispersaron, y la paz se desvaneció. Durante generaciones, los descendientes de Kael han entrenado en secreto, esperando el momento de recuperar el honor de su clan. Ahora, el mundo necesita un nuevo héroe.
+                Eres un joven guerrero, último descendiente de Kael, y ha llegado el momento de enfrentarte a tu destino. Debes desafiar a los mejores luchadores de los clanes y demostrar que tienes la fuerza y la determinación necesarias para enfrentar a Sombra y restaurar la paz en Nerath.
+             ¿Tendrás la fuerza y el coraje para enfrentarte a Sombra, redimir a tu clan y restaurar el equilibrio en el mundo? ¡La batalla por Nerath comienza ahora!</p>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+
+    <!-- Modal de las reglas -->
+    <div id="rules-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Reglas</h2>
+            <p>1. Debes golpear a tu oponente antes de que el cronómetro llegue a 0.<br>
+               2. Al llegar a 600 golpes, le ganas a tu oponente.<br>
+               3. Si el tiempo llega a 0, el juego termina.</p>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Área de juego -->
+    <div id="game-area">
+        <div id="fish"></div>
+    </div>
+
+   <!-- Modal de Game Over -->
+   <div id="game-over-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Tu oponente te ha derrotado. A la próxima, sé más veloz.</h2>
+        <p id="final-score-message"></p>
+
+        <div id="win-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>
+                    Has derrotado a la entidad maligna, el gran Rey de la Oscuridad. ¡Azathoth ha caído por fin! Con su derrota, el reino de Nerath queda liberado de su opresiva oscuridad, y tu ancestro Kael ahora puede descansar en paz.
+                    
+                    Después de una épica batalla, tu valentía ha traído la tan ansiada paz al mundo, poniendo fin a la terrible influencia de Azathoth. ¡Enhorabuena, héroe! Ahora, toma tu lugar como soberano y lidera el reino con valentía, ferocidad y justicia. Sé el rey que Nerath necesita y guía a tu pueblo hacia un futuro brillante.</h2>
+                <p id="win-score-message"></p>
+        </div>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

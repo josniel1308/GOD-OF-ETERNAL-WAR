@@ -1,0 +1,68 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2f7ec4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url("../res/fondo-de-coliseo.webp");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+#game-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#game-area {
+    width: 80vw;
+    height: 60vh;
+    margin: 100px auto;
+    border: 2px solid #000;
+    position: relative;
+    background-color: #87CEEB; /* Color de fondo similar al agua */
+    background: url("../res/fondo-de-coliseo.webp");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+#fish {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%; /* Para hacerlo más parecido a un pez */
+    background: url("../res/descarga\ \(3\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+/* Estilos para los modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(163, 168, 170, 0.767);
+    border: 2px solid #000;
+    padding: 20px;
+    z-index: 1000;
+    background: url("../res/coliseo\ del\ modal.jfif");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+#game-over-modal {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: rgb(17, 70, 214);
+}
+#win-modal{
+    background-color: rgb(255, 1, 1);
+    color: rgb(17, 70, 214);
+}
